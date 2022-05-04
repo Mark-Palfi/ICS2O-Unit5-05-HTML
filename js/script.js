@@ -12,10 +12,10 @@ function enterClicked() {
   const lineC = document.getElementById("length3-of-triangle").value
 
  // line comaprasin
-  if (lineA = lineB && lineA = lineC && lineB = lineC) {
+  if ((lineA = lineB) && (lineA = lineC) && (lineB = lineC)) {
     document.getElementById("type").innerHTML = "It's equilateral"
   }  else if (lineA != lineB && lineA != lineC && lineB != lineC) {
-    document.getElementById("type").innerHTML = "you can see an PG-13 rated movie alone."
+    document.getElementById("type").innerHTML = "It's scalene."
   }  else if (lineA = lineB && lineA != lineC && lineB != lineC) {
     document.getElementById("type").innerHTML = "you can see an G rated movie alone."
   }
