@@ -16,7 +16,7 @@ function enterClicked() {
     document.getElementById("type").innerHTML = "It's equilateral"
   }  else if (lineA != lineB && lineA != lineC && lineB != lineC) {
     document.getElementById("type").innerHTML = "It's scalene."
-  }  else if (lineA = lineB && lineA != lineC && lineB != lineC) {
+  }  else if (lineA == lineB && lineA != lineC && lineB != lineC) {
     document.getElementById("type").innerHTML = "you can see an G rated movie alone."
   }
 }
