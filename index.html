@@ -34,34 +34,50 @@
         <h3>Please enter the following:</h3>
         <!-- Simple Textfield -->
         <form action="#">
-          <p>Street Name</p>
+          <p>A</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="street-name">
-            <label class="mdl-textfield__label" for="street-name">Name here ...</label>
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="length1-of-triangle"/>
+            <label class="mdl-textfield__label" for="length1-of-triangle">A ...</label>
           </div>
         </form>
-        <!-- Numeric Textfield -->
+        <!-- Simple Textfield -->
         <form action="#">
-          <p>Street Number</p>
+          <p>B</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="street-number">
-            <label class="mdl-textfield__label" for="street-number">Number here ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="length2-of-triangle"/>
+            <label class="mdl-textfield__label" for="length2-of-triangle">B ...</label>
+          </div>
+        </form>      
+        <!-- Simple Textfield -->
+        <form action="#">
+          <p>C</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="length3-of-triangle"/>
+            <label class="mdl-textfield__label" for="length3-of-triangle">C ...</label>
           </div>
         </form>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="enterClicked()"
-        >
+          onclick="enterClicked()">
           Enter
         </button>
         <br>
         <br>
         <br>
-        <div id="user-info">
-          <div id="address"></div>
-        </div>
+        <div id="type"></div>
       </main>
     </div>
   </body>

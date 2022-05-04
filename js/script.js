@@ -1,7 +1,5 @@
-// Copyright (c) 2020 Mark Palfi All rights reserved
-//
 // Created by: Mark Palfi
-// Created on: Mar 2022
+// Created on: Apr 2022
 // This file contains the JS functions for index.html
 
 /**
@@ -9,10 +7,16 @@
  */
 function enterClicked() {
   // input
-  const street_name = document.getElementById("street-name").value
-  const street_number = parseInt(document.getElementById("street-number").value)
+  const lineA = document.getElementById("length1-of-triangle").value
+  const lineB = document.getElementById("length2-of-triangle").value
+  const lineC = document.getElementById("length3-of-triangle").value
 
-  // output
-  document.getElementById("address").innerHTML =
-    "You live on: " + street_name + ", house " + street_number + "."
+ // line comaprasin
+  if (lineA = lineB && lineA = lineC && lineB = lineC) {
+    document.getElementById("type").innerHTML = "It's equilateral"
+  }  else if (lineA != lineB && lineA != lineC && lineB != lineC) {
+    document.getElementById("type").innerHTML = "you can see an PG-13 rated movie alone."
+  }  else if (lineA = lineB && lineA != lineC && lineB != lineC) {
+    document.getElementById("type").innerHTML = "you can see an G rated movie alone."
+  }
 }
