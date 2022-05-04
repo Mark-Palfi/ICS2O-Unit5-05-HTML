@@ -18,5 +18,9 @@ function enterClicked() {
     document.getElementById("type").innerHTML = "It's scalene."
   }  else if (lineA == lineB && lineA != lineC && lineB != lineC) {
     document.getElementById("type").innerHTML = "It's isosceles"
+  }  else if (lineA != lineB && lineA == lineC && lineB != lineC) {
+    document.getElementById("type").innerHTML = "It's isosceles"
+  }  else if (lineA != lineB && lineA != lineC && lineB == lineC) {
+    document.getElementById("type").innerHTML = "It's isosceles"
   }
 }
